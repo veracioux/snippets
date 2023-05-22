@@ -1,0 +1,13 @@
+# key: res
+# name: REST resource
+# --
+`
+(let ((level 1))
+  (save-excursion
+  (while (org-up-heading-safe)
+    (setq level (1+ level))))
+  level
+  (make-string level ?*))
+` $1
+${2: template} /$1
+$0
