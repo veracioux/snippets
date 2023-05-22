@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: <sth
+# name: src block with tangle home
+# --
+#+begin_src $1 :tangle (haris/tangle-home "$2")
+  $0
+#+end_src

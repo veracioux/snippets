@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Local script
+# key: <script
+# --
+#+begin_src ${1:shell} :tangle (haris/tangle-home ".local/bin/$2")
+  $0
+#+end_src
