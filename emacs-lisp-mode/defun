@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: defun
+# key: def
+# --
+(defun ${1:haris/${2:function}} (${3:args})${4:$(haris/snippets/replace-if-non-empty yas-text "\n\\\"")}${4:docstring}${4:$(haris/snippets/replace-if-non-empty yas-text "\\\"")}
+${5:(interactive${6: "${7:P}"})}${5:$(haris/snippets/replace-if-non-empty yas-text "\n")}  $0)
