@@ -1,0 +1,6 @@
+# key: <eca
+# name: emacs-config-alternative
+# --
+#+begin_src elisp :tangle (haris/tangle-home ".emacs.d/haris/$1.el") :exports none
+  <<${2:code-block-name}>>$0
+#+end_src

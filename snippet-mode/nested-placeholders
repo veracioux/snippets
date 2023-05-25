@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nested-placeholders
+# key: $
+# expand-env: ((increment (lambda (x) (let ((res (string-to-number x))) (if (eq res 0) "" (1+ res))))))
+# --
+$\{$1:${2:${3:haris/}\$${4:\{${5:${1:$(funcall increment yas-text)}}:${6:hello}\}}}\}

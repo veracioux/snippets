@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: spacemacs-set-leader-keys
+# key: sslk
+# --
+(spacemacs/set-leader-keys "o$1" ${2:haris/$3})
