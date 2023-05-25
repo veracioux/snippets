@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: jira-issue
+# key: j
+# --
+`(ignore-errors (cl-subseq (magit-get-current-branch) (string-match "[^-]+-[^-]+" (magit-get-current-branch)) (match-end 0)))`: $0
