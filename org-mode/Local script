@@ -3,7 +3,7 @@
 # key: <script
 # expand-env: ((yas-after-exit-snippet-hook (haris/snippets/local-script-on-exit)))
 # --
-** =${1:name}= :script:
-#+begin_src ${2:shell} :tangle (haris/tangle-home ".local/bin/$1")
+** =${1:name}= ${2::script:}
+#+begin_src ${3:shell} :tangle (haris/tangle-home ".local/bin/$1")
   $0
 #+end_src
