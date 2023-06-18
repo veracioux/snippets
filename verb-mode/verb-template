@@ -1,0 +1,4 @@
+# key: {
+# name: verb-template
+# --
+{{(${1:verb-$2})}}$0
