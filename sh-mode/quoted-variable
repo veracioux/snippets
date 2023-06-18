@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: quoted-variable
+# key: $
+# --
+"\$${1:\{${2:variable}\}}"$0

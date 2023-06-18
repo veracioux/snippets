@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: notify-send
+# key: n
+# --
+notify-send "${1:${2:title}" "${3:message}}"

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: command-substitution
+# key: $.
+# --
+$2$($1)${2:"}$0

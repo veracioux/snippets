@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: redirect
+# key: >
+# --
+${1:2}>${2:/dev/null}$0

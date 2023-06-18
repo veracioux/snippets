@@ -1,0 +1,34 @@
+# -*- mode: snippet -*-
+# name: getopt
+# key: getopt
+# --
+
+print_help() {
+    echo -e "Usage: $1"
+    echo
+    echo -e "Options:"
+    echo -e "  -h, --help  \t\t\tPrint this help message"
+    echo -e "  $8"
+}
+
+parsed_args="$(
+    getopt --name "${1:$BASH_SOURCE}" \
+           --options "h${2:o:}" \
+           --long "help${3:,output:}" \
+           -- "$@"
+)"
+
+eval set -- "$parsed_args"
+
+while :; do
+    case "\$1" in
+        ${4:-h | --help})
+            print_help
+            exit ;;
+        $5
+        --)
+            shift 1
+            break ;;
+    esac
+done
+$0
