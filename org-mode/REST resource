@@ -2,12 +2,8 @@
 # name: REST resource
 # --
 `
-(let ((level 1))
-  (save-excursion
-  (while (org-up-heading-safe)
-    (setq level (1+ level))))
-  level
-  (make-string level ?*))
+(let ((level (car (ignore-errors (org-heading-components)))))
+  (make-string (1+ (or level 0)) ?*))
 ` $1
-${2: template} /$1
+${2:GET} /$1
 $0
