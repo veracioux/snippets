@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Noweb reference
+# key: <>
+# --
+«$1»
